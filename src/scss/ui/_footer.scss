@@ -1,0 +1,59 @@
+@use '../custom' as *;
+
+.footer {
+	background-color: $dark;
+	color: $primary;
+}
+
+.footer__redes {
+	.fa-instagram-square {
+		color: $dark;
+	}
+}
+
+.footer__logo {
+	@include media-breakpoint-up(lg) {
+		position: relative !important;
+	}
+
+	a {
+		color: $primary;
+
+		@include media-breakpoint-up(lg) {
+			position: absolute !important;
+			top: -12rem;
+			left: 82.5rem;
+		}
+
+		@include media-breakpoint-up(xl) {
+			left: 124.5rem;
+		}
+
+		@media screen and (min-width: 1920px) {
+			left: 176rem;
+		}
+	}
+}
+
+.footer__redes-siguenos {
+	font-size: $font-size-base * 1.2;
+}
+
+.copy {
+	font-size: $font-size-base * 0.8;
+}
+
+.footer__menu {
+	ul {
+		@include media-breakpoint-up(md) {
+			list-style-type: none;
+		}
+	}
+
+	a {
+		@include media-breakpoint-up(md) {
+			color: $primary;
+		}
+	}
+}
+// Fin Footer

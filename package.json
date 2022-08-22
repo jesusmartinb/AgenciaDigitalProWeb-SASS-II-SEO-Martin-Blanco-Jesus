@@ -1,0 +1,28 @@
+{
+  "name": "agenciadigitalproweb-sass-i-martin-blanco-jesus",
+  "version": "1.0.0",
+  "description": "Trabajo del Curso de Desarrollo Web del Programa Carrera de Desarrollo Full Stack CoderHouse. Sexto Desafío Entregable Aplicando SASS",
+  "main": "index.js",
+  "scripts": {
+    "compilar:sass": "sass --watch src/scss:assets/css",
+    "build:sass": "purgecss --css assets/css/styles.css --content index.html pages/**/*.html assets/js/**/*.js --output assets/css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jesusmartinb/AgenciaDigitalProWeb-SASS-I-Martin-Blanco-Jesus.git"
+  },
+  "keywords": [
+    "SASS",
+    "Bootstrap"
+  ],
+  "author": "Jesus Martin Blanco",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jesusmartinb/AgenciaDigitalProWeb-SASS-I-Martin-Blanco-Jesus/issues"
+  },
+  "homepage": "https://github.com/jesusmartinb/AgenciaDigitalProWeb-SASS-I-Martin-Blanco-Jesus#readme",
+  "devDependencies": {
+    "bootstrap": "^5.2.0",
+    "sass": "^1.54.4"
+  }
+}

@@ -1,0 +1,108 @@
+@use '../custom' as *;
+@use '../utils/mixins' as m;
+
+.hero {
+	min-height: $font-size-base * 25;
+
+	h2 {
+		padding-top: $font-size-base * 3;
+	}
+}
+
+#sobre .hero {
+	@include m.bgImage('https://cyberdietoterapia.com/images/background-nosotros.jpg', $white-35);
+
+	@include media-breakpoint-up(md) {
+		@include m.bgImage('https://cyberdietoterapia.com/images/background-nosotros.jpg', $black-35);
+	}
+}
+
+#equipo .hero {
+	@include m.bgImage('https://cyberdietoterapia.com/images/background-equipo.jpg', $white-35);
+}
+
+.cronology {
+	@include media-breakpoint-up(lg) {
+		min-width: 76.8rem;;
+	}
+
+	@media screen and (min-width: 1920px) {
+		min-width: 102.4rem;
+	}
+}
+
+.cards-compromisos {
+	@include media-breakpoint-up(lg) {
+		column-gap: 4rem;
+	}
+
+	@include media-breakpoint-up(xl) {
+		column-gap: 8rem;
+	}
+
+	@media screen and (min-width: 1920px) {
+		column-gap: 12rem;
+	}
+}
+
+.quieres-trabajar {
+	ul {
+		li {
+			&::before {
+				content: "❤ ";
+			}
+		}
+	}
+
+	@include media-breakpoint-up(lg) {
+		padding-right: 20%;
+	}
+
+	@include media-breakpoint-up(xl) {
+		padding-right: 30%;
+		flex-shrink: 1.5;
+	}
+
+	@media screen and (min-width: 1920px) {
+		padding-right: 10%;
+		border-right: 2px solid $azul-marino;
+		margin-right: 20%;
+	}
+}
+
+#servicios {
+	@include media-breakpoint-up(lg){
+		.main {
+			.image {
+				img {
+					visibility: hidden;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1920px) {
+	.history {
+			padding-right: 31rem;
+			border-right: 2px solid $azul-marino;
+			margin-right: 29rem;
+	}
+}
+
+#nuevo {
+	.hero {
+		@include m.bgImage('https://cyberdietoterapia.com/images/background-talento.jpg', $white-35);
+	}
+
+	@include media-breakpoint-up(lg) {
+		.image {
+			@include m.bgImage('https://cyberdietoterapia.com/images/img03.jpg', transparent);
+
+			img {
+				visibility: hidden;
+			}
+		}
+	}
+}
+
