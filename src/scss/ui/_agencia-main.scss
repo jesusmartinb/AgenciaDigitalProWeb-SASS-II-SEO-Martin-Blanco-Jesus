@@ -10,15 +10,15 @@
 }
 
 #sobre .hero {
-	@include m.bgImage('https://cyberdietoterapia.com/images/background-nosotros.jpg', $white-35);
+	@include m.bgImage('../../../assets/img/background-nosotros.jpg', $white-35);
 
 	@include media-breakpoint-up(md) {
-		@include m.bgImage('https://cyberdietoterapia.com/images/background-nosotros.jpg', $black-35);
+		@include m.bgImage('../../../assets/img/background-nosotros.jpg', $black-35);
 	}
 }
 
 #equipo .hero {
-	@include m.bgImage('https://cyberdietoterapia.com/images/background-equipo.jpg', $white-35);
+	@include m.bgImage('../../../assets/img/background-equipo.jpg', $white-35);
 }
 
 .cronology {
@@ -92,12 +92,12 @@
 
 #nuevo {
 	.hero {
-		@include m.bgImage('https://cyberdietoterapia.com/images/background-talento.jpg', $white-35);
+		@include m.bgImage('../../../assets/img/background-talento.jpg', $white-35);
 	}
 
 	@include media-breakpoint-up(lg) {
 		.image {
-			@include m.bgImage('https://cyberdietoterapia.com/images/img03.jpg', transparent);
+			@include m.bgImage('../../../assets/img/img03.jpg', transparent);
 
 			img {
 				visibility: hidden;
