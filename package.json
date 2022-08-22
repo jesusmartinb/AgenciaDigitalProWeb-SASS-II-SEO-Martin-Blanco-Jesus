@@ -23,6 +23,9 @@
   "homepage": "https://github.com/jesusmartinb/AgenciaDigitalProWeb-SASS-I-Martin-Blanco-Jesus#readme",
   "devDependencies": {
     "bootstrap": "^5.2.0",
+    "gulp": "^4.0.2",
+    "gulp-cache": "^1.1.3",
+    "gulp-imagemin": "^7.1.0",
     "sass": "^1.54.4"
   }
 }
