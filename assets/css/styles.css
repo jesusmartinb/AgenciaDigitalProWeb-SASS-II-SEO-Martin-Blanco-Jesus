@@ -11530,14 +11530,14 @@ h4 {
 
 .contactanos {
   min-height: 50rem;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.35) 100%), url("../../../assets/img/background01.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.35) 100%), url("../../../assets/img/background01.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top left;
 }
 @media (min-width: 768px) {
   .contactanos {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.35) 100%), url("../../../assets/img/background01.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.35) 100%), url("../../../assets/img/background01.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top left;
@@ -11582,7 +11582,7 @@ h4 {
     left: -10px;
   }
   .fases .image {
-    background-image: linear-gradient(transparent 0%, transparent 100%), url("../../../assets/img/img02.jpg");
+    background-image: linear-gradient(transparent 0%, transparent 100%), url("../../../assets/img/img02.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top left;
@@ -11594,7 +11594,7 @@ h4 {
 
 @media (min-width: 1024px) {
   .razones .image {
-    background-image: linear-gradient(transparent 0%, transparent 100%), url("../../../assets/img/img01.jpg");
+    background-image: linear-gradient(transparent 0%, transparent 100%), url("../../../assets/img/img01.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top left;
@@ -11747,14 +11747,14 @@ p {
 }
 
 #sobre .hero {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.35) 100%), url("../../../assets/img/background-nosotros.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.35) 100%), url("../../../assets/img/background-nosotros.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top left;
 }
 @media (min-width: 768px) {
   #sobre .hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.35) 100%), url("../../../assets/img/background-nosotros.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.35) 100%), url("../../../assets/img/background-nosotros.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top left;
@@ -11762,7 +11762,7 @@ p {
 }
 
 #equipo .hero {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.35) 100%), url("../../../assets/img/background-equipo.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.35) 100%), url("../../../assets/img/background-equipo.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top left;
@@ -11831,14 +11831,14 @@ p {
   }
 }
 #nuevo .hero {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.35) 100%), url("../../../assets/img/background-talento.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.35) 100%), url("../../../assets/img/background-talento.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top left;
 }
 @media (min-width: 1024px) {
   #nuevo .image {
-    background-image: linear-gradient(transparent 0%, transparent 100%), url("../../../assets/img/img03.jpg");
+    background-image: linear-gradient(transparent 0%, transparent 100%), url("../../../assets/img/img03.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top left;
@@ -11891,84 +11891,84 @@ p {
 }
 
 #diseno .hero {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.35) 100%), url("../../../assets/img/background-diseno.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.35) 100%), url("../../../assets/img/background-diseno.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top left;
 }
 @media (min-width: 1024px) {
   #diseno .column1 {
-    background-image: linear-gradient(transparent 0%, transparent 100%), url("../../../assets/img/img04.jpg");
+    background-image: linear-gradient(transparent 0%, transparent 100%), url("../../../assets/img/img04.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top left;
   }
 }
 #desarrollo .hero {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.35) 100%), url("../../../assets/img/background-desarrollo.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.35) 100%), url("../../../assets/img/background-desarrollo.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top left;
 }
 @media (min-width: 1024px) {
   #desarrollo .column3 {
-    background-image: linear-gradient(transparent 0%, transparent 100%), url("../../../assets/img/img05.jpg");
+    background-image: linear-gradient(transparent 0%, transparent 100%), url("../../../assets/img/img05.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top left;
   }
 }
 #optimiza .hero {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.35) 100%), url("../../../assets/img/background-optimi.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.35) 100%), url("../../../assets/img/background-optimi.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top left;
 }
 @media (min-width: 1024px) {
   #optimiza .column1 {
-    background-image: linear-gradient(transparent 0%, transparent 100%), url("../../../assets/img/img06.jpg");
+    background-image: linear-gradient(transparent 0%, transparent 100%), url("../../../assets/img/img06.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top left;
   }
 }
 #posicionamiento .hero {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.35) 100%), url("../../../assets/img/background-posiciona.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.35) 100%), url("../../../assets/img/background-posiciona.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top left;
 }
 @media (min-width: 1024px) {
   #posicionamiento .column3 {
-    background-image: linear-gradient(transparent 0%, transparent 100%), url("../../../assets/img/img07.jpg");
+    background-image: linear-gradient(transparent 0%, transparent 100%), url("../../../assets/img/img07.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top left;
   }
 }
 #publicidad .hero {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.35) 100%), url("../../../assets/img/background-publi.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.35) 100%), url("../../../assets/img/background-publi.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top left;
 }
 @media (min-width: 1024px) {
   #publicidad .column1 {
-    background-image: linear-gradient(transparent 0%, transparent 100%), url("../../../assets/img/img08.jpg");
+    background-image: linear-gradient(transparent 0%, transparent 100%), url("../../../assets/img/img08.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top left;
   }
 }
 #marketing .hero {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.35) 100%), url("../../../assets/img/background-marketing.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.35) 100%), url("../../../assets/img/background-marketing.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top left;
 }
 @media (min-width: 1024px) {
   #marketing .column3 {
-    background-image: linear-gradient(transparent 0%, transparent 100%), url("../../../assets/img/img09.jpg");
+    background-image: linear-gradient(transparent 0%, transparent 100%), url("../../../assets/img/img09.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top left;
@@ -12087,49 +12087,49 @@ hr {
   }
   #proyectos .hijo1 {
     grid-area: hijo1;
-    background-image: linear-gradient(transparent 0%, transparent 100%), url("../../../assets/img/galeria1.jpg");
+    background-image: linear-gradient(transparent 0%, transparent 100%), url("../../../assets/img/galeria1.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top left;
   }
   #proyectos .hijo2 {
     grid-area: hijo2;
-    background-image: linear-gradient(transparent 0%, transparent 100%), url("../../../assets/img/galeria2.jpg");
+    background-image: linear-gradient(transparent 0%, transparent 100%), url("../../../assets/img/galeria2.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top left;
   }
   #proyectos .hijo3 {
     grid-area: hijo3;
-    background-image: linear-gradient(transparent 0%, transparent 100%), url("../../../assets/img/galeria3.jpg");
+    background-image: linear-gradient(transparent 0%, transparent 100%), url("../../../assets/img/galeria3.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top left;
   }
   #proyectos .hijo4 {
     grid-area: hijo4;
-    background-image: linear-gradient(transparent 0%, transparent 100%), url("../../../assets/img/galeria4.jpg");
+    background-image: linear-gradient(transparent 0%, transparent 100%), url("../../../assets/img/galeria4.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top left;
   }
   #proyectos .hijo5 {
     grid-area: hijo5;
-    background-image: linear-gradient(transparent 0%, transparent 100%), url("../../../assets/img/galeria5.jpg");
+    background-image: linear-gradient(transparent 0%, transparent 100%), url("../../../assets/img/galeria5.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top left;
   }
   #proyectos .hijo6 {
     grid-area: hijo6;
-    background-image: linear-gradient(transparent 0%, transparent 100%), url("../../../assets/img/galeria6.jpg");
+    background-image: linear-gradient(transparent 0%, transparent 100%), url("../../../assets/img/galeria6.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top left;
   }
   #proyectos .hijo7 {
     grid-area: hijo7;
-    background-image: linear-gradient(transparent 0%, transparent 100%), url("../../../assets/img/galeria7.jpg");
+    background-image: linear-gradient(transparent 0%, transparent 100%), url("../../../assets/img/galeria7.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top left;
@@ -12137,7 +12137,7 @@ hr {
 }
 
 #planes .hero {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.35) 100%), url("../../../assets/img/background-planes.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.35) 100%), url("../../../assets/img/background-planes.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top left;
@@ -12205,7 +12205,7 @@ hr {
 }
 
 #contacto .hero {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.35) 100%), url("../../../assets/img/background-contacto.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.35) 100%), url("../../../assets/img/background-contacto.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top left;

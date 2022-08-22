@@ -29,12 +29,12 @@
 
 #diseno {
 	.hero {
-		@include m.bgImage('../../../assets/img/background-diseno.jpg', $white-35);
+		@include m.bgImage('../../../assets/img/background-diseno.webp', $white-35);
 	}
 
 	.column1 {
 		@include media-breakpoint-up(lg) {
-			@include m.bgImage('../../../assets/img/img04.jpg', transparent);
+			@include m.bgImage('../../../assets/img/img04.webp', transparent);
 		}
 	}
 
@@ -46,12 +46,12 @@
 
 #desarrollo {
 	.hero {
-		@include m.bgImage('../../../assets/img/background-desarrollo.jpg', $white-35);
+		@include m.bgImage('../../../assets/img/background-desarrollo.webp', $white-35);
 	}
 
 	.column3 {
 		@include media-breakpoint-up(lg) {
-			@include m.bgImage('../../../assets/img/img05.jpg', transparent);
+			@include m.bgImage('../../../assets/img/img05.webp', transparent);
 		}
 	}
 
@@ -64,12 +64,12 @@
 
 #optimiza {
 	.hero {
-		@include m.bgImage('../../../assets/img/background-optimi.jpg', $white-35);
+		@include m.bgImage('../../../assets/img/background-optimi.webp', $white-35);
 	}
 
 	.column1 {
 		@include media-breakpoint-up(lg) {
-			@include m.bgImage('../../../assets/img/img06.jpg', transparent);
+			@include m.bgImage('../../../assets/img/img06.webp', transparent);
 		}
 	}
 
@@ -81,12 +81,12 @@
 
 #posicionamiento {
 	.hero {
-		@include m.bgImage('../../../assets/img/background-posiciona.jpg', $white-35);
+		@include m.bgImage('../../../assets/img/background-posiciona.webp', $white-35);
 	}
 
 	.column3 {
 		@include media-breakpoint-up(lg) {
-			@include m.bgImage('../../../assets/img/img07.jpg', transparent);
+			@include m.bgImage('../../../assets/img/img07.webp', transparent);
 		}
 	}
 
@@ -99,12 +99,12 @@
 
 #publicidad {
 	.hero {
-		@include m.bgImage('../../../assets/img/background-publi.jpg', $white-35);
+		@include m.bgImage('../../../assets/img/background-publi.webp', $white-35);
 	}
 
 	.column1 {
 		@include media-breakpoint-up(lg) {
-			@include m.bgImage('../../../assets/img/img08.jpg', transparent);
+			@include m.bgImage('../../../assets/img/img08.webp', transparent);
 		}
 	}
 
@@ -116,12 +116,12 @@
 
 #marketing {
 	.hero {
-		@include m.bgImage('../../../assets/img/background-marketing.jpg', $white-35);
+		@include m.bgImage('../../../assets/img/background-marketing.webp', $white-35);
 	}
 
 	.column3 {
 		@include media-breakpoint-up(lg) {
-			@include m.bgImage('../../../assets/img/img09.jpg', transparent);
+			@include m.bgImage('../../../assets/img/img09.webp', transparent);
 		}
 	}
 

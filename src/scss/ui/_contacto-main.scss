@@ -3,7 +3,7 @@
 
 #contacto {
 	.hero {
-		@include m.bgImage('../../../assets/img/background-contacto.jpg', $white-35);
+		@include m.bgImage('../../../assets/img/background-contacto.webp', $white-35);
 	}
 }
 
