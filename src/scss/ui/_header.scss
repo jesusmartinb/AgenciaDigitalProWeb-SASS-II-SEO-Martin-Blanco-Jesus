@@ -17,6 +17,7 @@ body {
 h1 {
     font-size: $h1-font-size;
     font-weight: $font-weight-bolder;
+    margin-top: $font-size-base * 2.5;
 }
 
 h2 {
@@ -37,6 +38,15 @@ h4 {
 // Fin Estilos Generales
 
 /* Header */
+.position-fija {
+    @include media-breakpoint-up(md) {
+        position: fixed;
+        top: 6rem;
+        left: 0;
+        background-color: $dark;
+        z-index: 9999;
+    }
+}
 
 .header__redes,
 .footer__redes {
@@ -111,6 +121,12 @@ h4 {
 .offcanvas {
     --bs-offcanvas-width: 30.5rem;
     background-color: $primary;
+}
+
+.header__logo {
+    @include media-breakpoint-up(md) {
+        margin-right: 4rem;
+    }
 }
 
 .header__logo,

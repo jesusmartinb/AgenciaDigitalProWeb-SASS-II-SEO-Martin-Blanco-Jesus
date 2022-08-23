@@ -11422,6 +11422,7 @@ body {
 h1 {
   font-size: 6rem;
   font-weight: 900;
+  margin-top: 5rem;
 }
 
 h2 {
@@ -11441,6 +11442,16 @@ h4 {
 }
 
 /* Header */
+@media (min-width: 768px) {
+  .position-fija {
+    position: fixed;
+    top: 6rem;
+    left: 0;
+    background-color: #000000;
+    z-index: 9999;
+  }
+}
+
 .header__redes .fab::before,
 .footer__redes .fab::before {
   font-size: 4rem;
@@ -11510,6 +11521,12 @@ h4 {
 .offcanvas {
   --bs-offcanvas-width: 30.5rem;
   background-color: aliceblue;
+}
+
+@media (min-width: 768px) {
+  .header__logo {
+    margin-right: 4rem;
+  }
 }
 
 .header__logo a,
