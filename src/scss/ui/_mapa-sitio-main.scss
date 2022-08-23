@@ -1,0 +1,28 @@
+@use '../custom' as *;
+@use '../utils/mixins' as m;
+
+#mapa {
+	.main {
+		a {
+			@include media-breakpoint-down(md) {
+				color: $dark;
+			}
+		}
+		
+		ul {
+			li {
+				&:last-child {
+					margin-bottom: $font-size-base * 2;
+				}
+
+				ul {
+					padding-left: $font-size-base * 1.5;
+				}
+			}
+
+			.no-submenu {
+				margin-bottom: $font-size-base * 2;
+			}
+		}
+	}
+}
