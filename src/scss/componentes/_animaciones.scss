@@ -15,7 +15,9 @@
 	#planes.black,
 	#planes .black,
 	#contacto.black,
-	#contacto .black {
+	#contacto .black,
+	#mapa.black,
+	#mapa .black {
 		background-color: $dark;
 		color: $primary;
 		transition: all .5s ease-in-out;
@@ -32,7 +34,9 @@
 	#planes.white,
 	#planes .white,
 	#contacto.white,
-	#contacto .white {
+	#contacto .white,
+	#mapa.white,
+	#mapa .white {
 		background-color: $primary;
 		color: $dark;
 		transition: all .5s ease-in-out;

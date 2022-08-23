@@ -10977,7 +10977,9 @@ textarea.form-control-lg {
 #planes.black,
 #planes .black,
 #contacto.black,
-#contacto .black {
+#contacto .black,
+#mapa.black,
+#mapa .black {
     background-color: #000000;
     color: aliceblue;
     transition: all 0.5s ease-in-out;
@@ -10993,7 +10995,9 @@ textarea.form-control-lg {
 #planes.white,
 #planes .white,
 #contacto.white,
-#contacto .white {
+#contacto .white,
+#mapa.white,
+#mapa .white {
     background-color: aliceblue;
     color: #000000;
     transition: all 0.5s ease-in-out;
@@ -12236,6 +12240,21 @@ textarea {
   color: #ff0000;
 }
 
+@media (max-width: 767.98px) {
+  #mapa .main a {
+    color: #000000;
+  }
+}
+#mapa .main ul li:last-child {
+  margin-bottom: 4rem;
+}
+#mapa .main ul li ul {
+  padding-left: 3rem;
+}
+#mapa .main ul .no-submenu {
+  margin-bottom: 4rem;
+}
+
 .footer {
   background-color: #000000;
   color: aliceblue;
@@ -12288,6 +12307,10 @@ textarea {
   .footer__menu a {
     color: aliceblue;
   }
+}
+
+.mapa a {
+  color: aliceblue;
 }
 
 /*# sourceMappingURL=styles.css.map */
