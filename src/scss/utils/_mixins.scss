@@ -17,3 +17,9 @@
 	background-size: cover;
 	background-position: top left;
 }
+
+@mixin pantallaMuyGrande {
+	@media screen and (min-width: $pantallaMuyGrande) {
+		@content;
+	}
+}

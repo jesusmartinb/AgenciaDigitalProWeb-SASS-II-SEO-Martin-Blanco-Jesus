@@ -67,5 +67,7 @@ $grid-breakpoints: (
   xxl: 1600px
 );
 
+$pantallaMuyGrande: 1920px;
+
 // Importar Bootstrap
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';

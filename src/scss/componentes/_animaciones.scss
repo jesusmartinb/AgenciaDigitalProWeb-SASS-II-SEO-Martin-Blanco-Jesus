@@ -1,4 +1,5 @@
 @use '../custom' as *;
+@use '../utils/mixins' as m;
 
 /* Animaciones, transiciones, transformaciones y gradientes */
 
@@ -44,7 +45,7 @@
 }
 
 /* Animaciones con la librería Animate.css V4 */
-@media screen and (min-width: 1920px) {
+@include m.pantallaMuyGrande {
 	.hidden {
 			visibility: hidden;
 	}

@@ -22,7 +22,7 @@
 		padding: $font-size-base * 2.5;
 	}
 
-	@media screen and (min-width: 1920px) {
+	@include m.pantallaMuyGrande {
 		padding: $font-size-base * 5;
 	}
 }
@@ -261,7 +261,7 @@ hr {
 			}
 		}
 
-		@media screen and (min-width: 1920px) {
+		@include m.pantallaMuyGrande {
 			margin: $font-size-base * 5 0;
 		}
 	}

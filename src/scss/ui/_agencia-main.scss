@@ -46,7 +46,7 @@
 		min-width: 76.8rem;;
 	}
 
-	@media screen and (min-width: 1920px) {
+	@include m.pantallaMuyGrande {
 		min-width: 102.4rem;
 	}
 }
@@ -60,7 +60,7 @@
 		column-gap: 8rem;
 	}
 
-	@media screen and (min-width: 1920px) {
+	@include m.pantallaMuyGrande {
 		column-gap: 12rem;
 	}
 }
@@ -83,7 +83,7 @@
 		flex-shrink: 1.5;
 	}
 
-	@media screen and (min-width: 1920px) {
+	@include m.pantallaMuyGrande {
 		padding-right: 10%;
 		border-right: 2px solid $azul-marino;
 		margin-right: 20%;
@@ -102,7 +102,7 @@
 	}
 }
 
-@media screen and (min-width: 1920px) {
+@include m.pantallaMuyGrande {
 	.history {
 			padding-right: 31rem;
 			border-right: 2px solid $azul-marino;

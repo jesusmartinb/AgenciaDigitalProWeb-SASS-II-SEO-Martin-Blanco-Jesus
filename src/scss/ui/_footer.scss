@@ -1,4 +1,5 @@
 @use '../custom' as *;
+@use '../utils/mixins' as m;
 
 .footer {
 	background-color: $dark;
@@ -29,7 +30,7 @@
 			left: 124.5rem;
 		}
 
-		@media screen and (min-width: 1920px) {
+		@include m.pantallaMuyGrande {
 			left: 176rem;
 		}
 	}
