@@ -89,6 +89,74 @@
 	}
 }
 
+.webp {
+	#proyectos {
+		@include media-breakpoint-up(md) {
+			.hijo1 {
+				@include m.bgImage('../../../assets/img/galeria1.webp', transparent);
+			}
+			
+			.hijo2 {
+				@include m.bgImage('../../../assets/img/galeria2.webp', transparent);
+			}
+	
+			.hijo3 {
+				@include m.bgImage('../../../assets/img/galeria3.webp', transparent);
+			}
+	
+			.hijo4 {
+				@include m.bgImage('../../../assets/img/galeria4.webp', transparent);
+			}
+	
+			.hijo5 {
+				@include m.bgImage('../../../assets/img/galeria5.webp', transparent);
+			}
+	
+			.hijo6 {
+				@include m.bgImage('../../../assets/img/galeria6.webp', transparent);
+			}
+	
+			.hijo7 {
+				@include m.bgImage('../../../assets/img/galeria7.webp', transparent);
+			}
+		}
+	}
+}
+
+.no-webp {
+	#proyectos {
+		@include media-breakpoint-up(md) {
+			.hijo1 {
+				@include m.bgImage('../../../assets/img/galeria1.jpg', transparent);
+			}
+			
+			.hijo2 {
+				@include m.bgImage('../../../assets/img/galeria2.jpg', transparent);
+			}
+	
+			.hijo3 {
+				@include m.bgImage('../../../assets/img/galeria3.jpg', transparent);
+			}
+	
+			.hijo4 {
+				@include m.bgImage('../../../assets/img/galeria4.jpg', transparent);
+			}
+	
+			.hijo5 {
+				@include m.bgImage('../../../assets/img/galeria5.jpg', transparent);
+			}
+	
+			.hijo6 {
+				@include m.bgImage('../../../assets/img/galeria6.jpg', transparent);
+			}
+	
+			.hijo7 {
+				@include m.bgImage('../../../assets/img/galeria7.jpg', transparent);
+			}
+		}
+	}
+}
+
 #proyectos {
 	@include media-breakpoint-up(md) {
 		.gallery-container {
@@ -102,37 +170,30 @@
 
 		.hijo1 {
 			grid-area: hijo1;
-			@include m.bgImage('../../../assets/img/galeria1.webp', transparent);
 		}
 		
 		.hijo2 {
 			grid-area: hijo2;
-			@include m.bgImage('../../../assets/img/galeria2.webp', transparent);
 		}
 
 		.hijo3 {
 			grid-area: hijo3;
-			@include m.bgImage('../../../assets/img/galeria3.webp', transparent);
 		}
 
 		.hijo4 {
 			grid-area: hijo4;
-			@include m.bgImage('../../../assets/img/galeria4.webp', transparent);
 		}
 
 		.hijo5 {
 			grid-area: hijo5;
-			@include m.bgImage('../../../assets/img/galeria5.webp', transparent);
 		}
 
 		.hijo6 {
 			grid-area: hijo6;
-			@include m.bgImage('../../../assets/img/galeria6.webp', transparent);
 		}
 
 		.hijo7 {
 			grid-area: hijo7;
-			@include m.bgImage('../../../assets/img/galeria7.webp', transparent);
 		}
 	}
 }

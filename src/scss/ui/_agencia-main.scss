@@ -9,16 +9,36 @@
 	}
 }
 
-#sobre .hero {
-	@include m.bgImage('../../../assets/img/background-nosotros.webp', $white-35);
-
-	@include media-breakpoint-up(md) {
-		@include m.bgImage('../../../assets/img/background-nosotros.webp', $black-35);
+.webp {
+	#sobre .hero {
+		@include m.bgImage('../../../assets/img/background-nosotros.webp', $white-35);
+	
+		@include media-breakpoint-up(md) {
+			@include m.bgImage('../../../assets/img/background-nosotros.webp', $black-35);
+		}
 	}
 }
 
-#equipo .hero {
-	@include m.bgImage('../../../assets/img/background-equipo.webp', $white-35);
+.no-webp {
+	#sobre .hero {
+		@include m.bgImage('../../../assets/img/background-nosotros.jpg', $white-35);
+	
+		@include media-breakpoint-up(md) {
+			@include m.bgImage('../../../assets/img/background-nosotros.jpg', $black-35);
+		}
+	}
+}
+
+.webp {
+	#equipo .hero {
+		@include m.bgImage('../../../assets/img/background-equipo.webp', $white-35);
+	}
+}
+
+.no-webp {
+	#equipo .hero {
+		@include m.bgImage('../../../assets/img/background-equipo.jpg', $white-35);
+	}
 }
 
 .cronology {
@@ -90,19 +110,38 @@
 	}
 }
 
-#nuevo {
-	.hero {
-		@include m.bgImage('../../../assets/img/background-talento.webp', $white-35);
-	}
-
-	@include media-breakpoint-up(lg) {
-		.image {
-			@include m.bgImage('../../../assets/img/img03.webp', transparent);
-
-			img {
-				visibility: hidden;
+.webp {
+	#nuevo {
+		.hero {
+			@include m.bgImage('../../../assets/img/background-talento.webp', $white-35);
+		}
+	
+		@include media-breakpoint-up(lg) {
+			.image {
+				@include m.bgImage('../../../assets/img/img03.webp', transparent);
+	
+				img {
+					visibility: hidden;
+				}
 			}
 		}
 	}
 }
 
+.no-webp {
+	#nuevo {
+		.hero {
+			@include m.bgImage('../../../assets/img/background-talento.jpg', $white-35);
+		}
+	
+		@include media-breakpoint-up(lg) {
+			.image {
+				@include m.bgImage('../../../assets/img/img03.jpg', transparent);
+	
+				img {
+					visibility: hidden;
+				}
+			}
+		}
+	}
+}
