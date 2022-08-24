@@ -4,6 +4,7 @@ const { src, dest, series } = require('gulp');
 const cache = require('gulp-cache');
 const imagemin = require('gulp-imagemin');
 const webp = require('gulp-webp');
+const avif = require('gulp-avif');
 
 function imagenes(done) {
 	const options = {
@@ -27,5 +28,17 @@ function versionWebp(done) {
 	done();
 }
 
-exports.imagenes = series(imagenes, versionWebp);
+function versionAvif(done) {
+	const options = {
+		quality: 50
+	};
+	src('assets/img/**/*.{png,jpg}')
+		.pipe(avif(options))
+		.pipe(dest('assets/img'))
+
+	done();
+}
+
+exports.imagenes = series(imagenes, versionWebp, versionAvif);
 exports.versionWebp = versionWebp;
+exports.versionAvif = versionAvif;
