@@ -2,8 +2,7 @@
 @use '../utils/mixins' as m;
 
 .slogan {
-	font-weight: $font-weight-bolder;
-	word-spacing: .5rem;
+	@include m.slogan;
 }
 
 .webp {
