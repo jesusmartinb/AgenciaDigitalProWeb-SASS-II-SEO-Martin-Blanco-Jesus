@@ -29,6 +29,50 @@ $success: $verde;
 $body-bg: $primary;
 $body-color: $dark;
 
+// Añadir variables de color en mapas
+$blackscale: (
+  "10": $black-10,
+  "35": $black-35,
+  "55": $black-55,
+  "70": $black-70,
+  "100": $dark,
+);
+
+$colors: (
+  "light": $light,
+  "primary": $primary,
+  "secondary": $secondary,
+  "info": $info,
+  "danger": $danger,
+  "warning": $warning,
+  "success": $success,
+);
+
+// Funciones para generar clases para cada color de los mapas
+@each $name, $value in $blackscale {
+  .bgc-#{$name} {
+    background-color: $value;
+  }
+}
+
+@each $name, $value in $blackscale {
+  .color-#{$name} {
+    color: $value;
+  }
+}
+
+@each $name, $value in $colors {
+  .bgc-#{$name} {
+    background-color: $value;
+  }
+}
+
+@each $name, $value in $colors {
+  .color-#{$name} {
+    color: $value;
+  }
+}
+
 //Tipografía
 $font-family-sans-serif: 'Lato', sans-serif;
 $headings-font-family: 'Roboto Slab', serif;

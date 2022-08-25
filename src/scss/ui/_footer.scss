@@ -1,25 +1,12 @@
 @use '../custom' as *;
 @use '../utils/mixins' as m;
 
-.footer {
-	background-color: $dark;
-	color: $primary;
-}
-
-.footer__redes {
-	.fa-instagram-square {
-		color: $dark;
-	}
-}
-
 .footer__logo {
 	@include media-breakpoint-up(lg) {
 		position: relative !important;
 	}
 
 	a {
-		color: $primary;
-
 		@include media-breakpoint-up(lg) {
 			position: absolute !important;
 			top: -12rem;
@@ -58,9 +45,4 @@
 	}
 }
 
-.mapa {
-	a {
-		color: $primary;
-	}
-}
 // Fin Footer

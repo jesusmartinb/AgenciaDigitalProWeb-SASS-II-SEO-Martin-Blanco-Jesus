@@ -60,10 +60,6 @@ h4 {
     color: #0a66c2;
 }
 
-.fa-twitter-square {
-    color: $warning;
-}
-
 .fa-instagram-square {
     background: #f9ed32;
     background: -moz-linear-gradient(45deg, #f9ed32 0%, #ee2a7b 68%, #ee2a7b 68%, #002aff 100%);
@@ -74,7 +70,6 @@ h4 {
 
 .dropdown-menu {
     --bs-dropdown-font-size: $font-size-base;
-    background-color: $primary;
 }
 
 .navbar>.container-fluid {
@@ -120,7 +115,6 @@ h4 {
 
 .offcanvas {
     --bs-offcanvas-width: 30.5rem;
-    background-color: $primary;
 }
 
 .header__logo {
