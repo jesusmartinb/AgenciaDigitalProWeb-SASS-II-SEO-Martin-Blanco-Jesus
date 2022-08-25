@@ -1,10 +1,9 @@
 @use '../custom' as *;
+@use '../utils/mixins' as m;
 
 /* Cards equipo - Cards Animaciones*/
 .card {
-	width: 31rem;
-	min-height: 57rem;
-	overflow: hidden;
+	@include m.card(57rem);
 
 	img {
 		height: 31rem;
@@ -30,9 +29,7 @@
 #testimonios {
 	.card {
 		.image {
-			width: 31rem;
-			height: 31rem;
-			overflow: hidden;
+			@include m.card(31rem);
 		}
 	}
 
@@ -132,10 +129,7 @@
 	.iconos {
 		i {
 			&:first-child {
-				font-size: 12rem;
-				position: absolute;
-				top: -30px;
-				left: -25px;
+				@include m.iconos(-25px);
 			}
 
 			&:last-child {
@@ -147,10 +141,7 @@
 	.iconos2 {
 		i {
 			&:first-child {
-				font-size: 12rem;
-				position: absolute;
-				top: -30px;
-				left: -35px;
+				@include m.iconos(-35px);
 			}
 
 			&:last-child {
@@ -162,10 +153,7 @@
 	.iconos3 {
 		i {
 			&:first-child {
-				font-size: 12rem;
-				position: absolute;
-				top: -30px;
-				left: -23px;
+				@include m.iconos(-23px);
 			}
 
 			&:last-child {
@@ -177,10 +165,7 @@
 	.iconos4 {
 		i {
 			&:first-child {
-				font-size: 12rem;
-				position: absolute;
-				top: -30px;
-				left: -30px;
+				@include m.iconos(-30px);
 			}
 
 			&:last-child {

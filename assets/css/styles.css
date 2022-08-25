@@ -11186,8 +11186,8 @@ textarea.form-control-lg {
 /* Cards equipo - Cards Animaciones*/
 .card {
   width: 31rem;
-  min-height: 57rem;
   overflow: hidden;
+  min-height: 57rem;
 }
 .card img {
   height: 31rem;
@@ -11208,8 +11208,8 @@ textarea.form-control-lg {
 
 #testimonios .card .image {
   width: 31rem;
-  height: 31rem;
   overflow: hidden;
+  min-height: 31rem;
 }
 #testimonios .image img {
   width: 100%;

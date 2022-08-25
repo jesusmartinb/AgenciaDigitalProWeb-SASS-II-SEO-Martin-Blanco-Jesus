@@ -18,6 +18,19 @@
 	background-position: top left;
 }
 
+@mixin card($height) {
+	width: 31rem;
+	overflow: hidden;
+	min-height: $height;
+}
+
+@mixin iconos($left) {
+	font-size: $font-size-base * 6;
+	position: absolute;
+	top: -30px;
+	left: $left;
+}
+
 @mixin pantallaMuyGrande {
 	@media screen and (min-width: $pantallaMuyGrande) {
 		@content;
