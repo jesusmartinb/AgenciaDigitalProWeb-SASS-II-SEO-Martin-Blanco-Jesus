@@ -7,18 +7,18 @@
 
 .webp {
 	.contactanos {
-		@include m.bgImage('../../../assets/img/background01.webp', $white-35);
+		@include m.bgImage('../../assets/img/background01.webp', $white-35);
 		@include media-breakpoint-up(md) {
-				@include m.bgImage('../../../assets/img/background01.webp', $black-35);
+				@include m.bgImage('../../assets/img/background01.webp', $black-35);
 		}
 	}
 }
 
 .no-webp {
 	.contactanos {
-		@include m.bgImage('../../../assets/img/background01.jpg', $white-35);
+		@include m.bgImage('../../assets/img/background01.jpg', $white-35);
 		@include media-breakpoint-up(md) {
-				@include m.bgImage('../../../assets/img/background01.jpg', $black-35);
+				@include m.bgImage('../../assets/img/background01.jpg', $black-35);
 		}
 	}
 }
@@ -86,7 +86,7 @@
 	.fases {
 		@include media-breakpoint-up(lg) {
 			.image {
-				@include m.bgImage('../../../assets/img/img02.webp', transparent);
+				@include m.bgImage('../../assets/img/img02.webp', transparent);
 			}
 		}
 	}
@@ -96,7 +96,7 @@
 	.fases {
 		@include media-breakpoint-up(lg) {
 			.image {
-				@include m.bgImage('../../../assets/img/img02.jpg', transparent);
+				@include m.bgImage('../../assets/img/img02.jpg', transparent);
 			}
 		}
 	}
@@ -116,7 +116,7 @@
 	.razones {
 		@include media-breakpoint-up(lg) {
 			.image {
-				@include m.bgImage('../../../assets/img/img01.webp', transparent);
+				@include m.bgImage('../../assets/img/img01.webp', transparent);
 			}
 		}
 	}
@@ -126,7 +126,7 @@
 	.razones {
 		@include media-breakpoint-up(lg) {
 			.image {
-				@include m.bgImage('../../../assets/img/img01.jpg', transparent);
+				@include m.bgImage('../../assets/img/img01.jpg', transparent);
 			}
 		}
 	}

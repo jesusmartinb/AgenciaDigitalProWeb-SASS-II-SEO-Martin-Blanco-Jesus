@@ -4,7 +4,7 @@
 .webp {
 	#planes {
 		.hero {
-			@include m.bgImage('../../../assets/img/background-planes.webp', $white-35);
+			@include m.bgImage('../../assets/img/background-planes.webp', $white-35);
 		}
 	}
 }
@@ -12,7 +12,7 @@
 .no-webp {
 	#planes {
 		.hero {
-			@include m.bgImage('../../../assets/img/background-planes.jpg', $white-35);
+			@include m.bgImage('../../assets/img/background-planes.jpg', $white-35);
 		}
 	}
 }

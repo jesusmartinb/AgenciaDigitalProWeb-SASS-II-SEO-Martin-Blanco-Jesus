@@ -93,31 +93,31 @@
 	#proyectos {
 		@include media-breakpoint-up(md) {
 			.hijo1 {
-				@include m.bgImage('../../../assets/img/galeria1.webp', transparent);
+				@include m.bgImage('../../assets/img/galeria1.webp', transparent);
 			}
 			
 			.hijo2 {
-				@include m.bgImage('../../../assets/img/galeria2.webp', transparent);
+				@include m.bgImage('../../assets/img/galeria2.webp', transparent);
 			}
 	
 			.hijo3 {
-				@include m.bgImage('../../../assets/img/galeria3.webp', transparent);
+				@include m.bgImage('../../assets/img/galeria3.webp', transparent);
 			}
 	
 			.hijo4 {
-				@include m.bgImage('../../../assets/img/galeria4.webp', transparent);
+				@include m.bgImage('../../assets/img/galeria4.webp', transparent);
 			}
 	
 			.hijo5 {
-				@include m.bgImage('../../../assets/img/galeria5.webp', transparent);
+				@include m.bgImage('../../assets/img/galeria5.webp', transparent);
 			}
 	
 			.hijo6 {
-				@include m.bgImage('../../../assets/img/galeria6.webp', transparent);
+				@include m.bgImage('../../assets/img/galeria6.webp', transparent);
 			}
 	
 			.hijo7 {
-				@include m.bgImage('../../../assets/img/galeria7.webp', transparent);
+				@include m.bgImage('../../assets/img/galeria7.webp', transparent);
 			}
 		}
 	}
@@ -127,31 +127,31 @@
 	#proyectos {
 		@include media-breakpoint-up(md) {
 			.hijo1 {
-				@include m.bgImage('../../../assets/img/galeria1.jpg', transparent);
+				@include m.bgImage('../../assets/img/galeria1.jpg', transparent);
 			}
 			
 			.hijo2 {
-				@include m.bgImage('../../../assets/img/galeria2.jpg', transparent);
+				@include m.bgImage('../../assets/img/galeria2.jpg', transparent);
 			}
 	
 			.hijo3 {
-				@include m.bgImage('../../../assets/img/galeria3.jpg', transparent);
+				@include m.bgImage('../../assets/img/galeria3.jpg', transparent);
 			}
 	
 			.hijo4 {
-				@include m.bgImage('../../../assets/img/galeria4.jpg', transparent);
+				@include m.bgImage('../../assets/img/galeria4.jpg', transparent);
 			}
 	
 			.hijo5 {
-				@include m.bgImage('../../../assets/img/galeria5.jpg', transparent);
+				@include m.bgImage('../../assets/img/galeria5.jpg', transparent);
 			}
 	
 			.hijo6 {
-				@include m.bgImage('../../../assets/img/galeria6.jpg', transparent);
+				@include m.bgImage('../../assets/img/galeria6.jpg', transparent);
 			}
 	
 			.hijo7 {
-				@include m.bgImage('../../../assets/img/galeria7.jpg', transparent);
+				@include m.bgImage('../../assets/img/galeria7.jpg', transparent);
 			}
 		}
 	}
