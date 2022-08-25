@@ -33,9 +33,7 @@
 		padding: 1rem 0;
 
 		&::before {
-			content: "✔";
-			margin-right: 1rem;
-			color: $success;
+			@include m.checked;
 		}
 	}
 }
@@ -51,9 +49,7 @@
 		padding: 1rem 0;
 
 		&::before {
-			content: "✔";
-			margin-right: 1rem;
-			color: $success;
+			@include m.checked;
 		}
 	}
 
