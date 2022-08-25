@@ -1,4 +1,33 @@
 @charset "UTF-8";
+
+.bgc-100 {
+  background-color: #000000;
+}
+
+.color-100 {
+  color: #000000;
+}
+
+.bgc-primary {
+  background-color: aliceblue;
+}
+
+.bgc-info {
+  background-color: rgb(175, 201, 226);
+}
+
+.color-primary {
+  color: aliceblue;
+}
+
+.color-danger {
+  color: #ff0000;
+}
+
+.color-warning {
+  color: #179cf0;
+}
+
 /*!
  * Bootstrap  v5.2.0 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
@@ -6,20 +35,13 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
-  --bs-blue: #0d6efd;
-  --bs-indigo: #6610f2;
-  --bs-purple: #6f42c1;
-  --bs-pink: #d63384;
-  --bs-red: #dc3545;
-  --bs-orange: #fd7e14;
-  --bs-yellow: #ffc107;
-  --bs-green: #198754;
-  --bs-teal: #20c997;
-  --bs-cyan: #0dcaf0;
-  --bs-black: #000000;
-  --bs-white: #ffffff;
-  --bs-gray: #6c757d;
-  --bs-gray-dark: #343a40;
+  --bs-light: #ffffff;
+  --bs-primary: aliceblue;
+  --bs-secondary: rgb(12, 58, 104);
+  --bs-info: rgb(175, 201, 226);
+  --bs-danger: #ff0000;
+  --bs-warning: #179cf0;
+  --bs-success: rgb(56, 207, 56);
   --bs-gray-100: #f8f9fa;
   --bs-gray-200: #e9ecef;
   --bs-gray-300: #dee2e6;
@@ -271,7 +293,8 @@ a > code {
   color: inherit;
 }
 
-img {
+img,
+svg {
   vertical-align: middle;
 }
 
@@ -1778,6 +1801,10 @@ textarea.form-control {
   border: 0 !important;
 }
 
+.d-block {
+  display: block !important;
+}
+
 .d-grid {
   display: grid !important;
 }
@@ -1869,8 +1896,16 @@ textarea.form-control {
   margin-bottom: 1.5rem !important;
 }
 
+.mb-5 {
+  margin-bottom: 3rem !important;
+}
+
 .ms-4 {
   margin-left: 1.5rem !important;
+}
+
+.p-2 {
+  padding: 0.5rem !important;
 }
 
 .p-3 {
@@ -1900,11 +1935,6 @@ textarea.form-control {
   padding-bottom: 0.5rem !important;
 }
 
-.py-3 {
-  padding-top: 1rem !important;
-  padding-bottom: 1rem !important;
-}
-
 .pt-0 {
   padding-top: 0 !important;
 }
@@ -1931,14 +1961,6 @@ textarea.form-control {
 
 .text-center {
   text-align: center !important;
-}
-
-.text-decoration-underline {
-  text-decoration: underline !important;
-}
-
-.text-uppercase {
-  text-transform: uppercase !important;
 }
 
 /* rtl:begin:remove */
@@ -2148,7 +2170,9 @@ textarea.form-control {
 #planes.black,
 #planes .black,
 #contacto.black,
-#contacto .black {
+#contacto .black,
+#mapa.black,
+#mapa .black {
     background-color: #000000;
     color: aliceblue;
     transition: all 0.5s ease-in-out;
@@ -2164,7 +2188,9 @@ textarea.form-control {
 #planes.white,
 #planes .white,
 #contacto.white,
-#contacto .white {
+#contacto .white,
+#mapa.white,
+#mapa .white {
     background-color: aliceblue;
     color: #000000;
     transition: all 0.5s ease-in-out;
@@ -2353,8 +2379,8 @@ textarea.form-control {
 /* Cards equipo - Cards Animaciones*/
 .card {
   width: 31rem;
-  min-height: 57rem;
   overflow: hidden;
+  min-height: 57rem;
 }
 .card img {
   height: 31rem;
@@ -2375,8 +2401,8 @@ textarea.form-control {
 
 #testimonios .card .image {
   width: 31rem;
-  height: 31rem;
   overflow: hidden;
+  min-height: 31rem;
 }
 #testimonios .image img {
   width: 100%;
@@ -2436,7 +2462,6 @@ textarea.form-control {
 .card-planes .content {
   border: 2px solid #aaaaaa;
   border-radius: 1rem;
-  background-color: rgb(175, 201, 226);
   max-width: 38.5rem;
 }
 .card-planes .precio {
@@ -2593,6 +2618,7 @@ body {
 h1 {
   font-size: 6rem;
   font-weight: 900;
+  margin-top: 5rem;
 }
 
 h2 {
@@ -2612,6 +2638,16 @@ h4 {
 }
 
 /* Header */
+@media (min-width: 768px) {
+  .position-fija {
+    position: fixed;
+    top: 6rem;
+    left: 0;
+    background-color: #000000;
+    z-index: 9999;
+  }
+}
+
 .header__redes .fab::before,
 .footer__redes .fab::before {
   font-size: 4rem;
@@ -2619,10 +2655,6 @@ h4 {
 
 .fa-linkedin {
   color: #0a66c2;
-}
-
-.fa-twitter-square {
-  color: #179cf0;
 }
 
 .fa-instagram-square {
@@ -2635,7 +2667,6 @@ h4 {
 
 .dropdown-menu {
   --bs-dropdown-font-size: $font-size-base;
-  background-color: aliceblue;
 }
 
 .navbar > .container-fluid {
@@ -2680,7 +2711,12 @@ h4 {
 
 .offcanvas {
   --bs-offcanvas-width: 30.5rem;
-  background-color: aliceblue;
+}
+
+@media (min-width: 768px) {
+  .header__logo {
+    margin-right: 4rem;
+  }
 }
 
 .header__logo a,
@@ -2697,22 +2733,44 @@ h4 {
 .slogan {
   font-weight: 900;
   word-spacing: 0.5rem;
+  padding: 1rem 0;
+  text-align: center;
+  text-decoration: underline;
+  text-transform: uppercase;
 }
 
-.contactanos {
-  min-height: 50rem;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.35) 100%), url("https://cyberdietoterapia.com/images/background01.jpg");
+.webp .contactanos {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.35) 100%), url("../../../assets/img/background01.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top left;
 }
 @media (min-width: 768px) {
-  .contactanos {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.35) 100%), url("https://cyberdietoterapia.com/images/background01.jpg");
+  .webp .contactanos {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.35) 100%), url("../../../assets/img/background01.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top left;
   }
+}
+
+.no-webp .contactanos {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.35) 100%), url("../../../assets/img/background01.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top left;
+}
+@media (min-width: 768px) {
+  .no-webp .contactanos {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.35) 100%), url("../../../assets/img/background01.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
+  }
+}
+
+.contactanos {
+  min-height: 50rem;
 }
 
 .image img {
@@ -2752,26 +2810,50 @@ h4 {
   .fases .rows-reverse::before {
     left: -10px;
   }
-  .fases .image {
-    background-image: linear-gradient(transparent 0%, transparent 100%), url("https://cyberdietoterapia.com/images/img02.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top left;
-  }
   .fases .image img {
     display: none;
   }
 }
 
 @media (min-width: 1024px) {
-  .razones .image {
-    background-image: linear-gradient(transparent 0%, transparent 100%), url("https://cyberdietoterapia.com/images/img01.jpg");
+  .webp .fases .image {
+    background-image: linear-gradient(transparent 0%, transparent 100%), url("../../../assets/img/img02.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top left;
   }
+}
+
+@media (min-width: 1024px) {
+  .no-webp .fases .image {
+    background-image: linear-gradient(transparent 0%, transparent 100%), url("../../../assets/img/img02.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
+  }
+}
+
+@media (min-width: 1024px) {
   .razones .image img {
     display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .webp .razones .image {
+    background-image: linear-gradient(transparent 0%, transparent 100%), url("../../../assets/img/img01.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
+  }
+}
+
+@media (min-width: 1024px) {
+  .no-webp .razones .image {
+    background-image: linear-gradient(transparent 0%, transparent 100%), url("../../../assets/img/img01.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
   }
 }
 
@@ -2917,23 +2999,45 @@ p {
   padding-top: 6rem;
 }
 
-#sobre .hero {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.35) 100%), url("https://cyberdietoterapia.com/images/background-nosotros.jpg");
+.webp #sobre .hero {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.35) 100%), url("../../../assets/img/background-nosotros.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top left;
 }
 @media (min-width: 768px) {
-  #sobre .hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.35) 100%), url("https://cyberdietoterapia.com/images/background-nosotros.jpg");
+  .webp #sobre .hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.35) 100%), url("../../../assets/img/background-nosotros.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top left;
   }
 }
 
-#equipo .hero {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.35) 100%), url("https://cyberdietoterapia.com/images/background-equipo.jpg");
+.no-webp #sobre .hero {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.35) 100%), url("../../../assets/img/background-nosotros.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top left;
+}
+@media (min-width: 768px) {
+  .no-webp #sobre .hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.35) 100%), url("../../../assets/img/background-nosotros.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
+  }
+}
+
+.webp #equipo .hero {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.35) 100%), url("../../../assets/img/background-equipo.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top left;
+}
+
+.no-webp #equipo .hero {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.35) 100%), url("../../../assets/img/background-equipo.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top left;
@@ -3001,20 +3105,38 @@ p {
     margin-right: 29rem;
   }
 }
-#nuevo .hero {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.35) 100%), url("https://cyberdietoterapia.com/images/background-talento.jpg");
+.webp #nuevo .hero {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.35) 100%), url("../../../assets/img/background-talento.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top left;
 }
 @media (min-width: 1024px) {
-  #nuevo .image {
-    background-image: linear-gradient(transparent 0%, transparent 100%), url("https://cyberdietoterapia.com/images/img03.jpg");
+  .webp #nuevo .image {
+    background-image: linear-gradient(transparent 0%, transparent 100%), url("../../../assets/img/img03.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top left;
   }
-  #nuevo .image img {
+  .webp #nuevo .image img {
+    visibility: hidden;
+  }
+}
+
+.no-webp #nuevo .hero {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.35) 100%), url("../../../assets/img/background-talento.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top left;
+}
+@media (min-width: 1024px) {
+  .no-webp #nuevo .image {
+    background-image: linear-gradient(transparent 0%, transparent 100%), url("../../../assets/img/img03.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
+  }
+  .no-webp #nuevo .image img {
     visibility: hidden;
   }
 }
@@ -3061,90 +3183,186 @@ p {
   }
 }
 
-#diseno .hero {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.35) 100%), url("https://cyberdietoterapia.com/images/background-diseno.jpg");
+.webp #diseno .hero {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.35) 100%), url("../../../assets/img/background-diseno.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top left;
 }
 @media (min-width: 1024px) {
-  #diseno .column1 {
-    background-image: linear-gradient(transparent 0%, transparent 100%), url("https://cyberdietoterapia.com/images/img04.jpg");
+  .webp #diseno .column1 {
+    background-image: linear-gradient(transparent 0%, transparent 100%), url("../../../assets/img/img04.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top left;
   }
 }
-#desarrollo .hero {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.35) 100%), url("https://cyberdietoterapia.com/images/background-desarrollo.jpg");
+
+.no-webp #diseno .hero {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.35) 100%), url("../../../assets/img/background-diseno.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top left;
 }
 @media (min-width: 1024px) {
-  #desarrollo .column3 {
-    background-image: linear-gradient(transparent 0%, transparent 100%), url("https://cyberdietoterapia.com/images/img05.jpg");
+  .no-webp #diseno .column1 {
+    background-image: linear-gradient(transparent 0%, transparent 100%), url("../../../assets/img/img04.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top left;
   }
 }
-#optimiza .hero {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.35) 100%), url("https://cyberdietoterapia.com/images/background-optimi.jpg");
+
+.webp #desarrollo .hero {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.35) 100%), url("../../../assets/img/background-desarrollo.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top left;
 }
 @media (min-width: 1024px) {
-  #optimiza .column1 {
-    background-image: linear-gradient(transparent 0%, transparent 100%), url("https://cyberdietoterapia.com/images/img06.jpg");
+  .webp #desarrollo .column3 {
+    background-image: linear-gradient(transparent 0%, transparent 100%), url("../../../assets/img/img05.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top left;
   }
 }
-#posicionamiento .hero {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.35) 100%), url("https://cyberdietoterapia.com/images/background-posiciona.jpg");
+
+.no-webp #desarrollo .hero {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.35) 100%), url("../../../assets/img/background-desarrollo.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top left;
 }
 @media (min-width: 1024px) {
-  #posicionamiento .column3 {
-    background-image: linear-gradient(transparent 0%, transparent 100%), url("https://cyberdietoterapia.com/images/img07.jpg");
+  .no-webp #desarrollo .column3 {
+    background-image: linear-gradient(transparent 0%, transparent 100%), url("../../../assets/img/img05.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top left;
   }
 }
-#publicidad .hero {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.35) 100%), url("https://cyberdietoterapia.com/images/background-publi.jpg");
+
+.webp #optimiza .hero {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.35) 100%), url("../../../assets/img/background-optimi.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top left;
 }
 @media (min-width: 1024px) {
-  #publicidad .column1 {
-    background-image: linear-gradient(transparent 0%, transparent 100%), url("https://cyberdietoterapia.com/images/img08.jpg");
+  .webp #optimiza .column1 {
+    background-image: linear-gradient(transparent 0%, transparent 100%), url("../../../assets/img/img06.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top left;
   }
 }
-#marketing .hero {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.35) 100%), url("https://cyberdietoterapia.com/images/background-marketing.jpg");
+
+.no-webp #optimiza .hero {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.35) 100%), url("../../../assets/img/background-optimi.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top left;
 }
 @media (min-width: 1024px) {
-  #marketing .column3 {
-    background-image: linear-gradient(transparent 0%, transparent 100%), url("https://cyberdietoterapia.com/images/img09.jpg");
+  .no-webp #optimiza .column1 {
+    background-image: linear-gradient(transparent 0%, transparent 100%), url("../../../assets/img/img06.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top left;
   }
 }
+
+.webp #posicionamiento .hero {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.35) 100%), url("../../../assets/img/background-posiciona.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top left;
+}
+@media (min-width: 1024px) {
+  .webp #posicionamiento .column3 {
+    background-image: linear-gradient(transparent 0%, transparent 100%), url("../../../assets/img/img07.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
+  }
+}
+
+.no-webp #posicionamiento .hero {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.35) 100%), url("../../../assets/img/background-posiciona.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top left;
+}
+@media (min-width: 1024px) {
+  .no-webp #posicionamiento .column3 {
+    background-image: linear-gradient(transparent 0%, transparent 100%), url("../../../assets/img/img07.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
+  }
+}
+
+.webp #publicidad .hero {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.35) 100%), url("../../../assets/img/background-publi.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top left;
+}
+@media (min-width: 1024px) {
+  .webp #publicidad .column1 {
+    background-image: linear-gradient(transparent 0%, transparent 100%), url("../../../assets/img/img08.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
+  }
+}
+
+.no-webp #publicidad .hero {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.35) 100%), url("../../../assets/img/background-publi.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top left;
+}
+@media (min-width: 1024px) {
+  .no-webp #publicidad .column1 {
+    background-image: linear-gradient(transparent 0%, transparent 100%), url("../../../assets/img/img08.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
+  }
+}
+
+.webp #marketing .hero {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.35) 100%), url("../../../assets/img/background-marketing.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top left;
+}
+@media (min-width: 1024px) {
+  .webp #marketing .column3 {
+    background-image: linear-gradient(transparent 0%, transparent 100%), url("../../../assets/img/img09.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
+  }
+}
+
+.no-webp #marketing .hero {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.35) 100%), url("../../../assets/img/background-marketing.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top left;
+}
+@media (min-width: 1024px) {
+  .no-webp #marketing .column3 {
+    background-image: linear-gradient(transparent 0%, transparent 100%), url("../../../assets/img/img09.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
+  }
+}
+
 hr {
   padding: 0 8rem !important;
   width: 0% !important;
@@ -3246,62 +3464,131 @@ hr {
 }
 
 @media (min-width: 768px) {
-  #proyectos .gallery-container {
-    grid-template-areas: "hijo1 hijo1 hijo2" "hijo1 hijo1 hijo3" "hijo5 hijo6 hijo3" "hijo5 hijo6 hijo4" "hijo7 hijo7 hijo7";
-  }
-  #proyectos .hijo1 {
-    grid-area: hijo1;
-    background-image: linear-gradient(transparent 0%, transparent 100%), url("https://cyberdietoterapia.com/images/galeria1.jpg");
+  .webp #proyectos .hijo1 {
+    background-image: linear-gradient(transparent 0%, transparent 100%), url("../../../assets/img/galeria1.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top left;
   }
-  #proyectos .hijo2 {
-    grid-area: hijo2;
-    background-image: linear-gradient(transparent 0%, transparent 100%), url("https://cyberdietoterapia.com/images/galeria2.jpg");
+  .webp #proyectos .hijo2 {
+    background-image: linear-gradient(transparent 0%, transparent 100%), url("../../../assets/img/galeria2.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top left;
   }
-  #proyectos .hijo3 {
-    grid-area: hijo3;
-    background-image: linear-gradient(transparent 0%, transparent 100%), url("https://cyberdietoterapia.com/images/galeria3.jpg");
+  .webp #proyectos .hijo3 {
+    background-image: linear-gradient(transparent 0%, transparent 100%), url("../../../assets/img/galeria3.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top left;
   }
-  #proyectos .hijo4 {
-    grid-area: hijo4;
-    background-image: linear-gradient(transparent 0%, transparent 100%), url("https://cyberdietoterapia.com/images/galeria4.jpg");
+  .webp #proyectos .hijo4 {
+    background-image: linear-gradient(transparent 0%, transparent 100%), url("../../../assets/img/galeria4.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top left;
   }
-  #proyectos .hijo5 {
-    grid-area: hijo5;
-    background-image: linear-gradient(transparent 0%, transparent 100%), url("https://cyberdietoterapia.com/images/galeria5.jpg");
+  .webp #proyectos .hijo5 {
+    background-image: linear-gradient(transparent 0%, transparent 100%), url("../../../assets/img/galeria5.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top left;
   }
-  #proyectos .hijo6 {
-    grid-area: hijo6;
-    background-image: linear-gradient(transparent 0%, transparent 100%), url("https://cyberdietoterapia.com/images/galeria6.jpg");
+  .webp #proyectos .hijo6 {
+    background-image: linear-gradient(transparent 0%, transparent 100%), url("../../../assets/img/galeria6.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top left;
   }
-  #proyectos .hijo7 {
-    grid-area: hijo7;
-    background-image: linear-gradient(transparent 0%, transparent 100%), url("https://cyberdietoterapia.com/images/galeria7.jpg");
+  .webp #proyectos .hijo7 {
+    background-image: linear-gradient(transparent 0%, transparent 100%), url("../../../assets/img/galeria7.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top left;
   }
 }
 
-#planes .hero {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.35) 100%), url("https://cyberdietoterapia.com/images/background-planes.jpg");
+@media (min-width: 768px) {
+  .no-webp #proyectos .hijo1 {
+    background-image: linear-gradient(transparent 0%, transparent 100%), url("../../../assets/img/galeria1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
+  }
+  .no-webp #proyectos .hijo2 {
+    background-image: linear-gradient(transparent 0%, transparent 100%), url("../../../assets/img/galeria2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
+  }
+  .no-webp #proyectos .hijo3 {
+    background-image: linear-gradient(transparent 0%, transparent 100%), url("../../../assets/img/galeria3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
+  }
+  .no-webp #proyectos .hijo4 {
+    background-image: linear-gradient(transparent 0%, transparent 100%), url("../../../assets/img/galeria4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
+  }
+  .no-webp #proyectos .hijo5 {
+    background-image: linear-gradient(transparent 0%, transparent 100%), url("../../../assets/img/galeria5.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
+  }
+  .no-webp #proyectos .hijo6 {
+    background-image: linear-gradient(transparent 0%, transparent 100%), url("../../../assets/img/galeria6.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
+  }
+  .no-webp #proyectos .hijo7 {
+    background-image: linear-gradient(transparent 0%, transparent 100%), url("../../../assets/img/galeria7.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
+  }
+}
+
+@media (min-width: 768px) {
+  #proyectos .gallery-container {
+    grid-template-areas: "hijo1 hijo1 hijo2" "hijo1 hijo1 hijo3" "hijo5 hijo6 hijo3" "hijo5 hijo6 hijo4" "hijo7 hijo7 hijo7";
+  }
+  #proyectos .hijo1 {
+    grid-area: hijo1;
+  }
+  #proyectos .hijo2 {
+    grid-area: hijo2;
+  }
+  #proyectos .hijo3 {
+    grid-area: hijo3;
+  }
+  #proyectos .hijo4 {
+    grid-area: hijo4;
+  }
+  #proyectos .hijo5 {
+    grid-area: hijo5;
+  }
+  #proyectos .hijo6 {
+    grid-area: hijo6;
+  }
+  #proyectos .hijo7 {
+    grid-area: hijo7;
+  }
+}
+
+.webp #planes .hero {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.35) 100%), url("../../../assets/img/background-planes.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top left;
+}
+
+.no-webp #planes .hero {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.35) 100%), url("../../../assets/img/background-planes.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top left;
@@ -3368,8 +3655,15 @@ hr {
   }
 }
 
-#contacto .hero {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.35) 100%), url("https://cyberdietoterapia.com/images/background-contacto.jpg");
+.webp #contacto .hero {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.35) 100%), url("../../../assets/img/background-contacto.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top left;
+}
+
+.no-webp #contacto .hero {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.35) 100%), url("../../../assets/img/background-contacto.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top left;
@@ -3379,26 +3673,25 @@ textarea {
   height: 20rem;
 }
 
-.required {
-  color: #ff0000;
+@media (max-width: 767.98px) {
+  #mapa .main a {
+    color: #000000;
+  }
 }
-
-.footer {
-  background-color: #000000;
-  color: aliceblue;
+#mapa .main ul li:last-child {
+  margin-bottom: 4rem;
 }
-
-.footer__redes .fa-instagram-square {
-  color: #000000;
+#mapa .main ul li ul {
+  padding-left: 3rem;
+}
+#mapa .main ul .no-submenu {
+  margin-bottom: 4rem;
 }
 
 @media (min-width: 1024px) {
   .footer__logo {
     position: relative !important;
   }
-}
-.footer__logo a {
-  color: aliceblue;
 }
 @media (min-width: 1024px) {
   .footer__logo a {
