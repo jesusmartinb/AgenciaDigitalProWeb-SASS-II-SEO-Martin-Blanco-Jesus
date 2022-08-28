@@ -11340,7 +11340,8 @@ textarea.form-control-lg {
 }
 
 .card-content {
-  min-height: 41rem;
+  min-height: 51rem;
+  padding: 2rem;
 }
 
 #testimonios .card .image {
@@ -11350,6 +11351,12 @@ textarea.form-control-lg {
 }
 #testimonios .image img {
   width: 100%;
+}
+#testimonios .cards-testimonios {
+  margin-bottom: 4rem;
+}
+#testimonios .identidad {
+  padding: 2rem;
 }
 
 .citation {

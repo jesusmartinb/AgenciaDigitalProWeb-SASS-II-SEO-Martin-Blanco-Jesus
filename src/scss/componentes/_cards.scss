@@ -23,7 +23,8 @@
 }
 
 .card-content {
-	min-height: 41rem;
+	min-height: 51rem;
+	padding: $font-size-base;
 }
 
 #testimonios {
@@ -37,6 +38,14 @@
 		img {
 			width: 100%;
 		}
+	}
+
+	.cards-testimonios {
+		margin-bottom: $font-size-base * 2;
+	}
+
+	.identidad {
+		padding: $font-size-base;
 	}
 }
 
