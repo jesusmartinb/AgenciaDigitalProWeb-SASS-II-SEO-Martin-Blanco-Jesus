@@ -10976,6 +10976,15 @@ textarea.form-control-lg {
     z-index: 50;
   }
 }
+.header__logo a, .footer__logo a {
+  font-family: "Roboto Slab", serif;
+  font-size: 3.2rem;
+  font-weight: 900;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
 .bgc-negro-10 {
   background-color: rgba(0, 0, 0, 0.1);
 }
@@ -11678,15 +11687,12 @@ h4 {
   }
 }
 
-.header__logo a,
-.footer__logo a {
-  font-family: "Roboto Slab", serif;
-  font-size: 3.2rem;
-  font-weight: 900;
-  text-decoration: none;
+.header__logo a {
   color: #000000;
-  display: block;
-  text-align: center;
+}
+
+.footer__logo a {
+  color: aliceblue;
 }
 
 .slogan {

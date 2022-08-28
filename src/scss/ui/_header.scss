@@ -1,5 +1,6 @@
 @use '../custom' as *;
 @use '../utils/maps' as map;
+@use '../utils/extends';
 
 // Estilos Generales
 * {
@@ -124,15 +125,16 @@ h4 {
     }
 }
 
-.header__logo,
+.header__logo {
+    a {
+        @extend %logo;
+        color: map-get(map.$blackscale, negro);
+    }
+}
+
 .footer__logo {
     a {
-        font-family: $headings-font-family;
-        font-size: $h2-font-size;
-        font-weight: $font-weight-bolder;
-        text-decoration: none;
-        color: map-get(map.$blackscale, negro);
-        display: block;
-        text-align: center;
+        @extend %logo;
+        color: map-get($colors, primary);
     }
 }
