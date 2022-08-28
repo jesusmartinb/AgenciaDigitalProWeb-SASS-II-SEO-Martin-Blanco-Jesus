@@ -11121,7 +11121,11 @@ textarea.form-control-lg {
 #contacto.black,
 #contacto .black,
 #mapa.black,
-#mapa .black {
+#mapa .black,
+.cronology.black,
+.cronology .black,
+.acordeon__item .white::before,
+.acordeon__item .white::after {
     background-color: #000000;
     color: aliceblue;
     transition: all 0.5s ease-in-out;
@@ -11139,7 +11143,11 @@ textarea.form-control-lg {
 #contacto.white,
 #contacto .white,
 #mapa.white,
-#mapa .white {
+#mapa .white,
+.cronology.white,
+.cronology .white,
+.acordeon__item .black::before,
+.acordeon__item .black::after {
     background-color: aliceblue;
     color: #000000;
     transition: all 0.5s ease-in-out;
@@ -11872,7 +11880,7 @@ p {
   overflow: hidden;
   padding: 0;
   margin: 0;
-  box-shadow: 0 3px 10px -2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 10px -2px rgb(175, 201, 226);
   -webkit-tap-highlight-color: transparent;
 }
 .faqs .acordeon__item + li,
@@ -11892,9 +11900,20 @@ p {
 .cronology .acordeon__item i::after {
   content: "";
   position: absolute;
-  background-color: #000000;
   width: 0.3rem;
   height: 0.9rem;
+}
+@media (max-width: 767.98px) {
+  .faqs .acordeon__item .black::before,
+.faqs .acordeon__item .black::after,
+.faqs .acordeon__item .white::before,
+.faqs .acordeon__item .white::after,
+.cronology .acordeon__item .black::before,
+.cronology .acordeon__item .black::after,
+.cronology .acordeon__item .white::before,
+.cronology .acordeon__item .white::after {
+    background-color: #000000;
+  }
 }
 .faqs .acordeon__item i::before,
 .cronology .acordeon__item i::before {
