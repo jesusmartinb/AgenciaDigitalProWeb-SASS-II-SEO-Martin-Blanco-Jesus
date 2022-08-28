@@ -1,5 +1,6 @@
 @use '../custom' as *;
 @use '../utils/mixins' as m;
+@use '../utils/maps' as map;
 
 .hero {
 	min-height: $font-size-base * 25;
@@ -14,7 +15,7 @@
 		@include m.bgImage('../../assets/img/background-nosotros.webp', $white-35);
 	
 		@include media-breakpoint-up(md) {
-			@include m.bgImage('../../assets/img/background-nosotros.webp', $black-35);
+			@include m.bgImage('../../assets/img/background-nosotros.webp', map-get(map.$blackscale, negro-35));
 		}
 	}
 }
@@ -24,7 +25,7 @@
 		@include m.bgImage('../../assets/img/background-nosotros.jpg', $white-35);
 	
 		@include media-breakpoint-up(md) {
-			@include m.bgImage('../../assets/img/background-nosotros.jpg', $black-35);
+			@include m.bgImage('../../assets/img/background-nosotros.jpg', map-get(map.$blackscale, negro-35));
 		}
 	}
 }

@@ -1,11 +1,12 @@
 @use '../custom' as *;
 @use '../utils/mixins' as m;
+@use '../utils/maps' as map;
 
 #mapa {
 	.main {
 		a {
 			@include media-breakpoint-down(md) {
-				color: $dark;
+				color: map-get(map.$blackscale, negro);
 			}
 		}
 		

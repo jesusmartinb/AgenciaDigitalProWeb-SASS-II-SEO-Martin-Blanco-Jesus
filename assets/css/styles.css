@@ -1,100 +1,4 @@
 @charset "UTF-8";
-.bgc-10 {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
-.bgc-35 {
-  background-color: rgba(0, 0, 0, 0.35);
-}
-
-.bgc-55 {
-  background-color: rgba(0, 0, 0, 0.55);
-}
-
-.bgc-70 {
-  background-color: rgba(0, 0, 0, 0.7);
-}
-
-.bgc-100 {
-  background-color: #000000;
-}
-
-.color-10 {
-  color: rgba(0, 0, 0, 0.1);
-}
-
-.color-35 {
-  color: rgba(0, 0, 0, 0.35);
-}
-
-.color-55 {
-  color: rgba(0, 0, 0, 0.55);
-}
-
-.color-70 {
-  color: rgba(0, 0, 0, 0.7);
-}
-
-.color-100 {
-  color: #000000;
-}
-
-.bgc-light {
-  background-color: #ffffff;
-}
-
-.bgc-primary {
-  background-color: aliceblue;
-}
-
-.bgc-secondary {
-  background-color: rgb(12, 58, 104);
-}
-
-.bgc-info {
-  background-color: rgb(175, 201, 226);
-}
-
-.bgc-danger {
-  background-color: #ff0000;
-}
-
-.bgc-warning {
-  background-color: #179cf0;
-}
-
-.bgc-success {
-  background-color: rgb(56, 207, 56);
-}
-
-.color-light {
-  color: #ffffff;
-}
-
-.color-primary {
-  color: aliceblue;
-}
-
-.color-secondary {
-  color: rgb(12, 58, 104);
-}
-
-.color-info {
-  color: rgb(175, 201, 226);
-}
-
-.color-danger {
-  color: #ff0000;
-}
-
-.color-warning {
-  color: #179cf0;
-}
-
-.color-success {
-  color: rgb(56, 207, 56);
-}
-
 /*!
  * Bootstrap  v5.2.0 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
@@ -102,13 +6,20 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
-  --bs-light: #ffffff;
-  --bs-primary: aliceblue;
-  --bs-secondary: rgb(12, 58, 104);
-  --bs-info: rgb(175, 201, 226);
-  --bs-danger: #ff0000;
-  --bs-warning: #179cf0;
-  --bs-success: rgb(56, 207, 56);
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #198754;
+  --bs-teal: #20c997;
+  --bs-cyan: #0dcaf0;
+  --bs-black: #000000;
+  --bs-white: #ffffff;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #343a40;
   --bs-gray-100: #f8f9fa;
   --bs-gray-200: #e9ecef;
   --bs-gray-300: #dee2e6;
@@ -11065,6 +10976,102 @@ textarea.form-control-lg {
     z-index: 50;
   }
 }
+.bgc-negro-10 {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.bgc-negro-35 {
+  background-color: rgba(0, 0, 0, 0.35);
+}
+
+.bgc-negro-55 {
+  background-color: rgba(0, 0, 0, 0.55);
+}
+
+.bgc-negro-70 {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.bgc-negro {
+  background-color: #000000;
+}
+
+.color-negro-10 {
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.color-negro-35 {
+  color: rgba(0, 0, 0, 0.35);
+}
+
+.color-negro-55 {
+  color: rgba(0, 0, 0, 0.55);
+}
+
+.color-negro-70 {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.color-negro {
+  color: #000000;
+}
+
+.bgc-light {
+  background-color: #ffffff;
+}
+
+.bgc-primary {
+  background-color: aliceblue;
+}
+
+.bgc-secondary {
+  background-color: rgb(12, 58, 104);
+}
+
+.bgc-info {
+  background-color: rgb(175, 201, 226);
+}
+
+.bgc-danger {
+  background-color: #ff0000;
+}
+
+.bgc-warning {
+  background-color: #179cf0;
+}
+
+.bgc-success {
+  background-color: rgb(56, 207, 56);
+}
+
+.color-light {
+  color: #ffffff;
+}
+
+.color-primary {
+  color: aliceblue;
+}
+
+.color-secondary {
+  color: rgb(12, 58, 104);
+}
+
+.color-info {
+  color: rgb(175, 201, 226);
+}
+
+.color-danger {
+  color: #ff0000;
+}
+
+.color-warning {
+  color: #179cf0;
+}
+
+.color-success {
+  color: rgb(56, 207, 56);
+}
+
 .btn {
   --bs-btn-color: #ffffff;
   --bs-btn-bg: #000000;

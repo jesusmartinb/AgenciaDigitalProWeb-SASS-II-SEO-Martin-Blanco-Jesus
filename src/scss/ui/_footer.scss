@@ -1,5 +1,6 @@
 @use '../custom' as *;
 @use '../utils/mixins' as m;
+@use '../utils/maps' as map;
 
 .footer__logo {
 	@include media-breakpoint-up(lg) {
@@ -40,7 +41,7 @@
 
 	a {
 		@include media-breakpoint-up(md) {
-			color: $primary;
+			color: map-get($colors, primary);
 		}
 	}
 }

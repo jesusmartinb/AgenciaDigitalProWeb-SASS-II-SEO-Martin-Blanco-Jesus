@@ -1,6 +1,7 @@
 @use '../custom' as *;
 @use '../utils/mixins' as m;
 @use '../utils/extends';
+@use '../utils/maps' as map;
 
 .slogan {
 	@include m.slogan;
@@ -10,7 +11,7 @@
 	.contactanos {
 		@include m.bgImage('../../assets/img/background01.webp', $white-35);
 		@include media-breakpoint-up(md) {
-				@include m.bgImage('../../assets/img/background01.webp', $black-35);
+				@include m.bgImage('../../assets/img/background01.webp', map-get(map.$blackscale, negro-35));
 		}
 	}
 }
@@ -19,7 +20,7 @@
 	.contactanos {
 		@include m.bgImage('../../assets/img/background01.jpg', $white-35);
 		@include media-breakpoint-up(md) {
-				@include m.bgImage('../../assets/img/background01.jpg', $black-35);
+				@include m.bgImage('../../assets/img/background01.jpg', map-get(map.$blackscale, negro-35));
 		}
 	}
 }

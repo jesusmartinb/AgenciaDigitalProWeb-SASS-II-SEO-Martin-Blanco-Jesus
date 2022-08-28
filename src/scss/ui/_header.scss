@@ -1,4 +1,5 @@
 @use '../custom' as *;
+@use '../utils/maps' as map;
 
 // Estilos Generales
 * {
@@ -11,7 +12,7 @@ html {
 
 body {
     font-size: $font-size-base;
-    background-color: $primary;
+    background-color: map-get($colors, primary);
 }
 
 h1 {
@@ -43,7 +44,7 @@ h4 {
         position: fixed;
         top: 6rem;
         left: 0;
-        background-color: $dark;
+        background-color: map-get(map.$blackscale, negro);
         z-index: 9999;
     }
 }
@@ -81,7 +82,7 @@ h4 {
     z-index: 9999;
     position: fixed;
     border: 2px solid $dark;
-    background-color: $primary;
+    background-color: map-get($colors, primary);
 }
 
 .nav-link {
@@ -89,9 +90,9 @@ h4 {
 }
 
 .dropdown-toggle::after {
-    color: $black-55;
+    color: map-get(map.$blackscale, negro-55);
     @include  media-breakpoint-up(md) {
-        color: $primary;
+        color: map-get($colors, primary);
     }
 }
 
@@ -130,7 +131,7 @@ h4 {
         font-size: $h2-font-size;
         font-weight: $font-weight-bolder;
         text-decoration: none;
-        color: $dark;
+        color: map-get(map.$blackscale, negro);
         display: block;
         text-align: center;
     }
