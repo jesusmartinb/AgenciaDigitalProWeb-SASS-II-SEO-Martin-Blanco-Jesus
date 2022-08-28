@@ -1,5 +1,6 @@
 @use '../custom' as *;
 @use '../utils/mixins' as m;
+@use '../utils/extends';
 
 /* Animaciones, transiciones, transformaciones y gradientes */
 
@@ -101,11 +102,6 @@
 			width: 90%;
 		}
 	}
-}
-
-%cards-ul {
-	display: flex;
-	padding: 0;
 }
 
 .cards-equipo ul {

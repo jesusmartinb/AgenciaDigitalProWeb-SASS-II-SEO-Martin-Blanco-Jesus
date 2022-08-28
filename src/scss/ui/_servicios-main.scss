@@ -1,5 +1,6 @@
 @use '../custom' as *;
 @use '../utils/mixins' as m;
+@use '../utils/extends';
 
 .container-fluid {
 	padding: 0;
@@ -12,18 +13,6 @@
 		hr {
 			display: none;
 		}
-	}
-}
-
-%columns {
-	padding: $font-size-base;
-
-	@include media-breakpoint-up(xl) {
-		padding: $font-size-base * 2.5;
-	}
-
-	@include m.pantallaMuyGrande {
-		padding: $font-size-base * 5;
 	}
 }
 

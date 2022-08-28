@@ -1,5 +1,6 @@
 @use '../custom' as *;
 @use '../utils/mixins' as m;
+@use '../utils/extends';
 
 .slogan {
 	@include m.slogan;
@@ -37,17 +38,6 @@
 	overflow-x: hidden;
 
 	@include media-breakpoint-up(lg) {
-		%punto {
-			content: "";
-			position: absolute;
-			top: -3px;
-			width: $font-size-base;
-			height: $font-size-base;
-			border-radius: 50%;
-			background-color: $azul;
-			z-index: 50;
-		}
-
 		article {
 			position: relative;
 		}
